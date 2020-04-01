@@ -18,6 +18,8 @@ const Incidents = () => {
 
   const navigation = useNavigation();
   const navigateToDetail = (incident) => {
+    console.log(incident);
+
     navigation.navigate('Detail', { incident });
   }
 
@@ -32,6 +34,7 @@ const Incidents = () => {
     const res = await api.get('incidents', {
       params: { page }
     });
+    console.log(incidents);
     setIncidents([...incidents, ...res.data]);
     setTotal(res.headers['x-total-count']);
     setPage(page + 1);

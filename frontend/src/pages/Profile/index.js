@@ -51,7 +51,7 @@ const Profile = () => {
       <ul>
         {incidents.map(incident => (
           <li key={incident.id}>
-            <strong>Casp: </strong>
+            <strong>Caso: </strong>
             <p>{incident.title}</p>
             <strong>Descrição:</strong>
             <p>{incident.description}</p>

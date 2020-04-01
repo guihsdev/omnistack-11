@@ -10,9 +10,9 @@ const routes = express.Router();
 
 routes.post('/sessions', sessionController.create);
 /** Phone patterns
- * 55 14 9 9746 9712
- * 5514997469712
- * 551497469712
+ * 55 14 9 9999 9999
+ * 5514999999999
+ * 551499999999
 */
 routes.get('/ongs', ongController.index);
 

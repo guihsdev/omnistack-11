@@ -21,7 +21,7 @@ const Register = () => {
     const data = {
       name,
       email,
-      whatsapp,
+     whatsapp:"55"+whatsapp,
       city,
       uf
     };

@@ -26,7 +26,8 @@ const Detail = () => {
   }
 
   const sendWhatsApp = () => {
-    Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
+    console.log(incident.whatsapp);
+    // Linking.openURL(`whatsapp://send?phone=${incident.whatsapp}&text=${message}`);
   }
 
   return (
